@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "poppins";
+    src: url(/components/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins-black";
+    src: url(/components/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "italica";
+    src: url(/components/fonts/Poppins-BlackItalic.ttf);
+}
+body{
+    background-color: rgba(0, 0, 0, 0.945);
+    color: rgb(240, 248, 255);
+    font-family:poppins;
+    font-style: normal;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 11px;
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #title{
+    flex-direction: column;
+    line-height: 10px;
+  }
+  li{
+    display: inline-block;
+    margin: 20px;
+  }
+  a{
+    color: aliceblue;
+  }
+  a:hover{
+    color: rgb(132, 14, 201);
+    transition: 1.3, all;
+ }
+ #Inscreva-se{
+    border: 3px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 100pt;
+ }
+ #Inscreva-se:hover{
+    background-color: rgb(132, 14, 201);
+    color: aliceblue;
+ }
+ 
+  h1{
+    font-weight: 200;
+    }
+  main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+      }
+  h2{
+    font-size: 40px;
+    line-height: 10px;
+    font-family: italica;
+   }
+   span{
+    color: rgb(132, 14, 201);
+   }
+   p{
+    line-height: 20px;
+    max-height: 500px;
+    font-family: poppins;
+}
+   img{
+    width: 580px; 
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   }
+   form [type = "submit"]{
+    height: 30px;
+    width: 50%;
+    background-color:rgb(132, 14, 201);
+    color: aliceblue;
+    font-weight: bold;
+   }
+   form [ type = "submit" ]:hover{
+    cursor: pointer;
+
+   }
+
+   input{
+    margin-top: 10px;
+    height: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+   }
+
+    @media screen and (max-width: 1080px){
+        header{
+            flex-direction: column;
+    }
+        main{
+            flex-direction: column;
+        }
+        h2{
+            font-size: 30px;
+        }
+        form{
+            margin: 0 auto;
+            width:100%;
+        }
+        input{
+            align-self: center;
+        }
+        img{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 850px){
+            h2{font-size: 19px;
+    }
+    @media screen and (max-width: 460px){
+        h2{font-size: 18px;
+        
+    }
+}
